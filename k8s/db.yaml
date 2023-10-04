@@ -11,12 +11,12 @@ spec:
     ports:
     - containerPort: 3306
     env:
-    - name: DBNAME
+    - name: MYSQL_DATABASE
       valueFrom:
         secretKeyRef:
           name: credentials   # references the Secret named credentials
           key: dbname       # referencing the username key under the stringData property
-    - name: MYSQLPW
+    - name: MYSQL_ROOT_PASSWORD
       valueFrom:
         secretKeyRef:
           name: credentials   # references the Secret named credentials
