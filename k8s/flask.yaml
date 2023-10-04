@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: flask-container
-        image: mattneedstolearn/trio-flask:latest
+        image: mattneedstolearn/trio-task-flask:latest
         ports:
         - containerPort: 5000
 ---
